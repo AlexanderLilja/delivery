@@ -3,10 +3,11 @@ Delivery API built for Cloud Native Apps.
 ## Endpoint
 https://3udzuhku11.execute-api.eu-west-1.amazonaws.com/delivery
 
-# How it works
+## How it works
+We get an order posted through the UI which sends the necessary information we need to retrieve more descriptive information about the customer and products held in the order itself.
 By sending the required information in json format embedded in the request body, it runs through all the functions and returns a receipt of the purchase as the response. It also sends an email to the address linked to the user_id that gets sent in the request body.
 
-## Example input
+### Example input
 ```json
 {
     "user": "e289f36e-7c9d-4e88-9435-fac296f391ed",
@@ -18,7 +19,7 @@ By sending the required information in json format embedded in the request body,
 }
 ```
 Here you can see the format required of the request body. User key holds the user_id as value. The order holds a key-value object where the key is the product_id and the value is the amount.
-## Example output
+### Example output
 ```json
 {
     "statusCode": 200,
