@@ -11,10 +11,9 @@ By sending the required information in json format embedded in the request body,
 ```json
 {
     "user": "e289f36e-7c9d-4e88-9435-fac296f391ed",
-    "order": 
-    {
+    "order": {
         "91025263-8117-49ee-83fe-9df6d3ea1dde": 3,
-		    "4d71bd14-cb7e-4b24-a858-8513b043e3fd": 4
+	"4d71bd14-cb7e-4b24-a858-8513b043e3fd": 4
 	}
 }
 ```
