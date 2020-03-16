@@ -5,7 +5,6 @@
 const https = require('https');
 const aws = require('aws-sdk');
 const ses = new aws.SES({region: 'eu-west-1'});
-var email_order = "";
 
 // ---------------------------------------------------------------
 //    API KEYS
@@ -23,6 +22,8 @@ const customer_api_key = process.env.customer_api_key; // CUSTOMER API KEY
 var product_data; // PRODUCT RESPONSE DATA
 var customer_data; // CUSTOMER RESPONSE DATA
 var inventory_data; // INVENTORY RESPONSE DATA
+
+var email_order = ""; // BUILDS THE EMAIL BODY LATER ON
 
 // INPUT VARIABLES
 var user;
